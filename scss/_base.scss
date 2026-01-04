@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+  // スムーズなスクロールを実現する
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", "sans-serif";
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

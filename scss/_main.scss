@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+.mainvisual {
+  text-align: center;
+}
+
+.bg-red {
+  background-color: #a93939;
+  // padding-top: 20px;
+}
+
+main h2,
+.lunch h2 {
+  text-align: center;
+}
+
+/* h2タグ用 */
+.section-title {
+  position: relative;
+  font-size: 2.4rem;
+  //   display: inline-block;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  padding-top: 40px;
+  font-family: Noto Serif JP;
+  color: white;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /*下線の位置*/
+    display: inline-block;
+    width: 60px; /*下線の長さ*/
+    height: 2px; /*下線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); /*位置調整*/
+    background-color: white; /*下線の色*/
+  }
+}
+
+.concept-desc {
+  position: relative;
+  padding: 40px;
+  //   max-width: 1440px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0px;
+    // concept-messageを中央に寄せる
+    text-align: center;
+    padding: 40px 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    text-align: center;
+  }
+}
+.concept-desc img {
+  width: 600px;
+  height: 450px;
+  margin-left: 20%;
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    height: auto;
+    //　画像を中央に寄せる
+    display: block;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    margin-left: 0%;
+  }
+}
+.concept-message {
+  position: absolute;
+  right: 12%;
+  bottom: 14%;
+  background-color: white;
+  opacity: 0.8;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  padding: 10px;
+  @media screen and (max-width: 768px) {
+    position: static;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    // margin-top: 12px;
+    text-align: left;
+    color: #ffffff;
+    // background-colorを透明にして打ち消し
+    background-color: transparent;
+  }
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    right: 11%;
+    bottom: 2%;
+  }
+}
+
+.concept-message h3 {
+  padding-bottom: 12px;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0px;
+    margin-bottom: 12px;
+    // font-weight: 600;
+  }
+}
+
+.line-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.line-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px; /* 文字と線の距離はお好みで */
+  width: 100%;
+  height: 2.5px;
+  background: rgb(250, 250, 250); /* 下線の色 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+}
+
+.line-animation.show::after {
+  transform: scaleX(1); /* 左→右に伸びる */
+}
+@media (prefers-reduced-motion: reduce) {
+  .line-animation::after {
+    transition: none;
+  }
+}
+
+.concept-message p {
+  @media screen and (max-width: 768px) {
+    line-height: 1.3;
+    font-size: 1.4rem;
+  }
+}
+
+.concept-detail {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  img {
+    border: 1px solid #ffffff;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #menu h2,
+  #access h2 {
+    padding-top: 0px;
+  }
+}
+
+.menu {
+  color: #ffffff;
+  @media screen and (max-width: 768px) {
+    margin: 40px 20px;
+  }
+}
+
+.menu-desc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 768px;
+  margin: 0 auto;
+  margin-top: 80px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 0px;
+    // margin-top: 0px;
+    margin: 40px 0;
+  }
+}
+
+.menu-desc img {
+  width: 350px;
+  height: 466px;
+  border: 1px solid #ffffff;
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.menu-message {
+  margin: 40px 0;
+  @media screen and (max-width: 767px) {
+    margin: 20px 0;
+  }
+  p {
+    line-height: 1.4;
+    font-size: 1.4rem;
+    color: #a9a9a9;
+  }
+}
+
+.menu-message h3 {
+  padding-bottom: 6px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 8px;
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+}
+
+.menu-desc.menu2 {
+  flex-direction: row-reverse;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.btn {
+  text-align: center;
+  margin: 40px 0;
+  cursor: pointer;
+}
+.menu-btn,
+.lunch-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #ffffff;
+  color: black;
+  padding: 20px;
+  letter-spacing: 0.05em;
+  border-bottom: solid 4px #798296;
+  &:hover {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); /*下に動く*/
+    border-bottom: none; /*線を消す*/
+  }
+}
+
+.lunch-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+  h3 {
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+// Top > お品書き ランチメニューの画像切替　Start
+.lunch-display {
+  position: relative;
+  margin: 0 auto;
+}
+// 上部：ランチコンテンツ（画像と説明文）
+.lunch-desc {
+  display: none; /* ←デフォルトは非表示 */
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.lunch-desc.active {
+  display: flex; /* ←表示するときだけ flex にする */
+}
+
+@media screen and (max-width: 768px) {
+  .lunch-desc {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.1s ease, transform 0.1s ease;
+    display: flex !important; /* ← スライドショー制御は使わないので常に出す */
+    gap: 0px;
+  }
+  .lunch-desc.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lunch-desc img {
+  width: 100%;
+  max-width: 400px; /* 大きい画像の最大サイズ */
+  height: auto;
+  border-radius: 8px;
+  @media screen and (max-width: 767px) {
+    max-width: 300px;
+  }
+}
+.lunch-message {
+  align-items: center;
+  letter-spacing: 0.08em;
+  width: 100%;
+  text-align: left;
+  @media screen and (max-width: 767px) {
+    // max-width: 300px;
+    max-width: 200px;
+  }
+}
+.lunch-message h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #a93939;
+}
+.lunch-message p {
+  font-size: 1.6rem;
+  @media screen and (max-width: 767px) {
+    font-size: 1.4rem;
+  }
+}
+
+.lunch-message h3 {
+  border-bottom: solid 1px #c3c3c3;
+  margin-bottom: 12px;
+  text-align: left;
+  @media screen and (max-width: 767px) {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+}
+// スマホ対応　ランチメニュー
+@media screen and (max-width: 768px) {
+  .section-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+
+  .section-fade.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// 下部：サムネイル（タブボタン）
+.lunch-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.lunch-tabs img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border 0.3s;
+  @media screen and (max-width: 767px) {
+    width: 22%; /* 4つで横並びに収まるように割合指定 */
+    max-width: 100px; /* PCでは大きくなりすぎないよう制限 */
+    height: auto;
+  }
+}
+// Top > お品書き ランチメニューの画像切替　Finish
+
+.access {
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.access-content {
+  display: flex;
+  margin: 40px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+}
+
+.access-item {
+  width: 50%;
+  padding: 0 14px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    // １つ目だけ40pxで余白作る
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+}
+.access-item dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  dt {
+    width: 20%;
+    // text-align: left;
+    padding: 12px 0px;
+    line-height: 1.5;
+    border-bottom: solid 1px #ffffff;
+    @media screen and (max-width: 768px) {
+      width: 28%;
+    }
+  }
+  dd {
+    width: 62%;
+    padding: 12px 0;
+    line-height: 1.5;
+    border-bottom: solid 1px #ffffff;
+    @media screen and (max-width: 768px) {
+      width: 66%;
+    }
+  }
+}

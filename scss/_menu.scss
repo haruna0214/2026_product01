@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+.menu-area {
+    color: #ffffff;
+}
+.menu {
+    position: relative;
+    // margin: 60px 0;
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.menu .lunch-message p {
+    text-align: left;
+    color: #a9a9a9;
+}
+
+@media screen and (max-width: 768px) {
+    .menu .menu-desc {
+        margin: 0px;
+        padding-top: 40px;
+    }
+    .menu .lunch-message {
+        max-width: 300px;
+    }
+    .menu .lunch-message h4 {
+        margin-top: 6px;
+    }
+}
+
+.menu .subtitle {
+    position: absolute;
+    font-size: 3.6rem;
+    top: 1%;
+    left: 10%;
+    // color: transparent;
+    -webkit-text-stroke: 0.04em rgb(255 255 255 / 50%);
+    z-index: 50;
+    letter-spacing: 0.07em;
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        font-weight: bold;
+        left: 0%;
+        top: -20px;
+    }
+}
+
+// 盛合せメニューと焼き肉メニューコンテンツ
+.menu-area .menu-desc {
+    display: flex;
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    h3 {
+        padding-bottom: 4px;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+}
+// 偶数番目だけflexアイテムの並び方を右から左に指定
+.menu-area .menu-desc:nth-child(even) {
+    flex-direction: row-reverse;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.inner {
+    margin-bottom: 40px;
+}
+.menu-area .contact {
+    padding: 40px 0;
+}
+
+// 噛むほど程よい弾力のホルモンコンテンツ
+.point {
+    margin-top: 50px;
+}
+.horumon-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 60px 0 10px 0;
+    @media screen and (max-width: 768px) {
+        padding: 30px 0 10px 0;
+    }
+}
+.horumon-item {
+    width: 30%;
+    text-align: center;
+    background-color: forestgreen;
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 12px;
+    }
+}
+.horumon-item p {
+    font-size: 1.4rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+.menu-area .menu p {
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        text-align: left;
+    }
+}
+
+// 選べる〆メニューコンテンツ
+.sime-desc {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding-top: 74px;
+    margin: 0 40px;
+    @media screen and (max-width: 768px) {
+        gap: 4px;
+        padding-top: 40px;
+        margin: 0px;
+    }
+}
+.sime-item p {
+    color: (85, 85, 85);
+}
+
+
+.sime {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+        gap: 12px;
+    }
+}
+.simebtn {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    @media screen and (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+.simebtn {
+    background-color: #ffffff;
+}
+// .simeright, .simeleft {
+//     background-color: #ffffff;
+// }
+.simebtn.js-thumb.active{
+    background-color: #A93939;
+}
+// .simeright.active ,.simeleft.active{
+//     background-color: #A93939;
+// }
+.simebtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.simebtn ul{
+    opacity: 0;
+}
+
+// 逸品料理コンテンツ
+
+.modalbtn {
+    text-align: center;
+    margin: 20px 0;
+}
+.open-modal {
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.modal-wrapper {
+    display: none;
+    color: #ffffff;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.modal-content {
+    display: flex;
+    margin: 40px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin: 20px;
+    }
+  }
+
+  .modal-item {
+    width: 50%;
+    padding: 0 14px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .modal-item dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    dt {
+      width: 70%;
+      text-align: left;
+      padding: 12px 0;
+      line-height: 1.5;
+      border-bottom: solid 1px #ffffff;
+    }
+    dd {
+      width: 30%;
+      text-align: right;
+      padding: 12px 0;
+      line-height: 1.5;
+      border-bottom: solid 1px #ffffff;
+      @media screen and (max-width: 768px) {
+        width: 65%;
+      }
+    }
+  }
+
+.modalbtn {
+    text-align: center;
+}
+.close-btn {
+    background-color: #A93939;
+    color: #ffffff;
+    padding: 15px 80px;
+    border: 1px solid #ffffff;
+    object-fit: cover;
+    @media screen and (max-width: 768px) {
+      padding-bottom: 60px;
+    }
+    &:hover {
+        background-color: #ffffff;
+        color: #A93939;
+        border: 1px solid #A93939;
+    }
+}

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.lunch-area {
+  color: #ffffff;
+  margin: 0 40px;
+  @media screen and (max-width: 768px) {
+    margin: 0 20px;
+  }
+  h3 {
+    // font-size: 1.8rem;
+    font-size: 2.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    @media screen and (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+}
+.text {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.lunch-inner {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  justify-content: center;
+  gap: 18px;
+  margin: 60px 0px;
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+    margin: 0px;
+  }
+}
+// @media screen and (max-width: 768px) {
+.lunch-inner img {
+  width: 270px;
+  gap: 8px;
+}
+// }
+.lunch-inner:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.lunch-line {
+  // 下線の横幅設定
+  width: 86%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.lunch-content {
+  display: flex;
+  margin: 20px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+
+.lunch-item {
+  width: 50%;
+  padding: 0 14px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+  }
+}
+.lunch-item dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  dt {
+    width: 28%;
+    text-align: left;
+    padding: 12px 0;
+    line-height: 1.5;
+    border-bottom: solid 1px #ffffff;
+  }
+  dd {
+    width: 72%;
+    padding: 12px 0;
+    line-height: 1.5;
+    border-bottom: solid 1px #ffffff;
+    text-align: right;
+    @media screen and (max-width: 768px) {
+      width: 65%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lunch-area .lunch-message h4 {
+    font-size: 1rem;
+  }
+  .lunch-area .lunch-message p {
+    font-size: 1.2rem;
+  }
+}
+
+.lunch-area .lunch-message {
+  width: 55%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
