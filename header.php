@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>炭火焼肉 香林｜公式ホームページ</title>
+    <title>炭火焼肉 名前｜公式ホームページ</title>
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel='stylesheet' href='<?php echo get_template_directory_uri() , '/scss/style.css'; ?>' /> -->
@@ -12,7 +12,7 @@
 <body>
 <header class="header-area">
         <div class="header-container">
-            <h1 class="site-title"><a href="#">炭火焼肉 香林</a></h1>
+            <h1 class="site-title"><a href="#">炭火焼肉 名前</a></h1>
             <button class="hamburger" id="hamburger-toggle" aria-expanded="false">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
