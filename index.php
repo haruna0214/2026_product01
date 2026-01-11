@@ -50,7 +50,6 @@
         </div>
     </div>
     <div class="btn">
-        <!-- <button type="button" class="menu-btn" onclick="location.href='<?php echo get_template_directory_uri() , '/page-menu.php'; ?>'">メニュー詳細はこちら</button> -->
         <button type="button" class="menu-btn" onclick="location.href='<?php echo esc_url( home_url('/menu/') ); ?>'">メニュー詳細はこちら</button>
     </div>
 

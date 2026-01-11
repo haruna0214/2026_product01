@@ -1,5 +1,10 @@
-<!-- ヘッダーを読み込む -->
-<?php get_header(); ?>
+
+<?php
+/*
+Template Name: メニューページ
+*/
+get_header();
+?>
 
 <!-- お品書きコンテンツ -->
 <section class="menu-area">
@@ -301,7 +306,6 @@
 
 <!-- 店舗情報 -->
 <?php get_template_part( 'access' ); ?>
-</section>
 
 <!-- // フッタを読み込む -->
 <?php get_footer(); ?>
