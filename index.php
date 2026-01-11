@@ -55,7 +55,7 @@
 
     <div class="lunch-wrapper">
         <h3>毎日ランチ実施中<br>厳選された黒毛和牛をお手頃価格でお召し上がりいただけます</h3>
-        <!-- 上部：ランチコンテンツ（画像と説明文）表示 Start-->
+    <!-- 上部：ランチコンテンツ（画像と説明文）表示 Start-->
         <div class="lunch-display">
             <div class="lunch-desc active section-fade" data-id="1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/sime1.png" alt="">
@@ -90,13 +90,13 @@
                 </div>
             </div>
     </div>
-        <!-- 上部：ランチ表示 Finish-->
-        <!-- 下部：サムネイル（タブボタン） -->
+    <!-- 上部：ランチ表示 Finish-->
+    <!-- 下部：サムネイル（タブボタン） -->
         <div class="lunch-tabs">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kari1.png" alt="ランチ1" data-id="1">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kari2.png" alt="ランチ2" data-id="2">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kari3.png" alt="ランチ3" data-id="3">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kari4.png" alt="ランチ4" data-id="4">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/sime1.png" alt="ランチ1" data-id="1">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/sime2.png" alt="ランチ2" data-id="2">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/sime3.png" alt="ランチ3" data-id="3">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/sime4.png" alt="ランチ4" data-id="4">
         </div>
         <!-- 下部：サムネイル（タブボタン） -->
 
