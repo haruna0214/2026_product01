@@ -93,12 +93,12 @@
 jQuery(function($) {
   $('#contact').on('mouseenter', function() {
       var basePath = $(this).data('basepath');
-      $(this).attr('src', basePath + '6.png');
+      $(this).attr('src', basePath + 'tel_hover.png');
   });
 
   $('#contact').on('mouseleave', function() {
       var basePath = $(this).data('basepath');
-      $(this).attr('src', basePath + '5.png');
+      $(this).attr('src', basePath + 'tel.png');
   });
 });
 

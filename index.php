@@ -17,19 +17,18 @@
         </div>
     </div>
     <div class="concept-detail">
-    <?php
-        $page = get_page_by_path( 'concept' ); // スラッグ conceptの固定ページを取得
-        if ( $page ) : ?>
-            <a href="<?php echo esc_url( get_permalink( $page->ID ) ); ?>">
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/4.png" alt=""> -->
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/4.png' ); ?>" alt="こだわり">
-            </a>
-    <?php endif; ?>
+        <?php
+            $page = get_page_by_path( 'concept' ); // スラッグ conceptの固定ページを取得
+            if ( $page ) : ?>
+                <a href="<?php echo esc_url( get_permalink( $page->ID ) ); ?>">
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/4.png" alt=""> -->
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/4.png' ); ?>" alt="こだわり">
+                </a>
+        <?php endif; ?>
     </div>
     <div class="contact">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/5.png" id="contact" data-basepath="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/tel.png" id="contact" data-basepath="<?php echo get_template_directory_uri(); ?>/img/" alt="">
     </div>
-
 
     </section>
     <!-- お品書き -->
