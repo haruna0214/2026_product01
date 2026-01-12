@@ -6,7 +6,7 @@
         <li><a href="#floor">空間</a></li>
         <li><a href="#access">店舗情報</a></li>
       </ul>
-      <p>&copy; 2025 YAKINIKU NAME</p>
+      <p>&copy; 2025 YAKINIKU NAMAE</p>
 </footer>
 
 <?php wp_footer(); ?>
