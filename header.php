@@ -12,7 +12,9 @@
 <body>
 <header class="header-area">
         <div class="header-container">
-            <h1 class="site-title"><a href="#">炭火焼肉 名前</a></h1>
+            <h1 class="site-title">
+                <a href="<?php echo esc_url( home_url('/') ); ?>" rel="home">炭火焼肉 名前</a>
+            </h1>
             <button class="hamburger" id="hamburger-toggle" aria-expanded="false">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
