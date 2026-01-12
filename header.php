@@ -13,6 +13,7 @@
 <header class="header-area">
         <div class="header-container">
             <h1 class="site-title">
+                <!-- 慣習的にrel属性を付ける -->
                 <a href="<?php echo esc_url( home_url('/') ); ?>" rel="home">炭火焼肉 名前</a>
             </h1>
             <button class="hamburger" id="hamburger-toggle" aria-expanded="false">
@@ -23,10 +24,13 @@
             <nav class="nav" id="nav" aria-hidden="true">
                 <div class="nav-overlay">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#concept">こだわり</a></li>
-                        <li class="nav-item"><a href="#menu">お品書き</a></li>
-                        <li class="nav-item"><a href="#floor">空間</a></li>
-                        <li class="nav-item"><a href="#access">店舗情報</a></li>
+                        <!-- 特別な関係性（外部・広告）ではないので、rel属性は付けない -->
+                        <!-- 動き：スラッグ指定で固定ページに遷移する -->
+                        <li class="nav-item"><a href="<?php echo esc_url( home_url('/concept/') ); ?>">こだわり</a></li>
+                        <li class="nav-item"><a href="<?php echo esc_url( home_url('/menu/') ); ?>">お品書き</a></li>
+                        <li class="nav-item"><a href="<?php echo esc_url( home_url('/floor/') ); ?>">空間</a></li>
+                        <!-- 動き:同一ページ内スクロール -->
+                        <li class="nav-item"><a href="<?php echo esc_url( home_url('/#access') ); ?>">店舗情報</a></li>
                     </ul>
                 </div>
             </nav>
