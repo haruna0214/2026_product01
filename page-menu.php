@@ -36,7 +36,7 @@ get_header();
                 </div>
         </div>
         <div class="contact">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/5.png" id="contact" data-basepath="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/tel.png" id="contact" data-basepath="<?php echo get_template_directory_uri(); ?>/img/" alt="">
         </div>
     </div>
     <div class="menu">
