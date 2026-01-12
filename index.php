@@ -16,12 +16,14 @@
             <p>当店はお客様にお肉の 質 と 量 どちらも満足いただきたい<br>その想いから産地直送で鮮度良いお肉を提供しています<br>是非一度、自慢のA5ランク佐賀牛をご堪能ください</p>
         </div>
     </div>
+    <!-- 固定ページ[concept]が存在する場合だけ、そのページへのリンク画像を表示する -->
     <div class="concept-detail">
         <?php
-            $page = get_page_by_path( 'concept' ); // スラッグ conceptの固定ページを取得
+            // 固定ページのスラッグ：conceptを取得
+            $page = get_page_by_path( 'concept' ); 
+            //　もしページが存在する場合、固定ページへのURLを取得する
             if ( $page ) : ?>
                 <a href="<?php echo esc_url( get_permalink( $page->ID ) ); ?>">
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/4.png" alt=""> -->
                     <img src="<?php echo esc_url( get_template_directory_uri() . '/img/4.png' ); ?>" alt="こだわり">
                 </a>
         <?php endif; ?>
