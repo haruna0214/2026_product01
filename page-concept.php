@@ -1,5 +1,10 @@
-<!-- ヘッダーを読み込む -->
-<?php get_header(); ?>
+
+<?php
+/*
+Template Name: コンセプトページ
+*/
+get_header();
+?>
 
 <main>
     <section id="concept-page" class="">

@@ -1,5 +1,10 @@
-<!-- ヘッダーを読み込む -->
-<?php get_header(); ?>
+
+<?php
+/*
+Template Name: ランチメニュー
+*/
+get_header();
+?>
 
 <!-- ランチメニューコンテンツ -->
 <section class="lunch-area">
