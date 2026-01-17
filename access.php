@@ -5,7 +5,7 @@
         <div class="access-item">
             <dl>
               <dt>店名</dt>
-              <dd>炭火焼肉 香林</dd>
+              <dd>炭火焼肉 名前</dd>
               <dt>住所</dt>
               <dd>〒000-0000<br>
               東京都新宿区新宿</dd>
@@ -29,4 +29,4 @@
             </dl>
         </div>
     </div>
-    </section>
+</section>
